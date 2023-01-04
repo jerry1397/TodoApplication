@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.form{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: transparent;
+}
+
+input{
+  padding: 5px 7px;
+  width: 50vw;
+}
+.sub{
+  padding: 5px 7px ;
+}
+
+.box{
+  border-bottom: 1px solid black;
+  box-shadow: 0px 5px 10px 10px aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  background-image: linear-gradient(to right,aqua,violet,white);
+}
+.heading{
+  text-transform: capitalize;
+  color: red;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.btn1{
+  margin-right: 10px;
+}
+
+
+.backstretch {
+  width: 100vw;
+  height: 400px;
+  background: #1e5799; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #1e5799 0%,#7db9e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+  
+.backstretch.animated {
+  -webkit-animation: filter-animation 8s infinite;
+  animation: filter-animation 8s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    -webkit-filter: hue-rotate(100deg);
+  }
+  
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    filter: hue-rotate(100deg);
+  }
+  
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
